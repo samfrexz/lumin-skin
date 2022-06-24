@@ -53,8 +53,8 @@ const BestSeller = () => {
       id: 6
     },
   ])
-  return ( 
-    <section className="w-navWidth mx-auto bg-bestBg mt-5 py-10">
+  return (
+    <section className="w-navWidth mx-auto mt-5 py-10 bg-bestBg">
       <div className="w-1/2 text-center py-3 mx-auto h-40">
         <h2>Best Sellers</h2>
         <p>
@@ -62,14 +62,16 @@ const BestSeller = () => {
         </p>
         <Link to="#">Shop all Best Sellers products (6)</Link>
       </div>
-      <div className="grid grid-cols-3 gap-x-10 w-bestWidth mx-auto gap-y-20">
+      
+      <div className="lg:grid xl:grid-cols-3 lg:grid-cols-2 gap-x-10 xl:w-bestWidth lg:w-9/12 mx-auto gap-y-20 overflow-x-scroll flex w-full justify-start flex-nowrap">
         {cardItems.map((item)=> (
-         <div key={item.id}>
+         <div key={item.id} className='overflow-x-auto' >
            <Cards {...item} />
          </div>
         ))}
       </div>
     </section>
+      
    );
 }
  

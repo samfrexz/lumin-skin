@@ -8,7 +8,8 @@ module.exports = {
       spacing: {
         navWidth: '93%',
         bestWidth: '90%',
-        cardWidth: '85%'
+        cardWidth: '85%',
+        over: '1200px'
       },
       colors: {
         bestBg: '#DFE2E0',
