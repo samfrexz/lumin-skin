@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    // borderWidth: {
+    //   line : '1px',
+    // },
     extend: {
       spacing: {
         navWidth: '93%',

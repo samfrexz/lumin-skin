@@ -10,7 +10,7 @@ const Cards = ({...item}) => {
         <div>
           <p className='text-center text-gray-500 py-3'>{ item.price }</p>
           <h1 className='capitalize'>{ item.title } </h1>
-          <p className='text-gray-400 italic'>{ item.description } </p>
+          <p className='text-gray-400 italic text-xs'>{ item.description } </p>
         </div>
         <div className='py-2 flex items-center'>
           <StarFilled className='text-rate'/>

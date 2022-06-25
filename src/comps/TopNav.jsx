@@ -6,8 +6,13 @@ import LogoDark from './LogoDark'
 import '../App.css'
 
 
-const TopNav = () => {
+const TopNav = ({ setNav, nav }) => {
   const [ mobileW, setMobileW ] = useState(window.innerWidth) 
+
+  const openNav =()=> {
+    setNav(true)
+  }
+
   const updateWidth =()=> {
     setMobileW(window.innerWidth)
     // console.log(mobileW)
@@ -21,9 +26,10 @@ const TopNav = () => {
     <header className="w-full lg:bg-white bg-black lg:text-gray-700 text-white h-20 fixed top-0">
       <nav className="w-navWidth mx-auto h-full flex justify-between items-center">
         <div className='lg:hidden'>
-          <MenuOutlined className='cursor-pointer text-2xl' />
+          <MenuOutlined className='cursor-pointer text-2xl' onClick={openNav} />
           <SearchOutlined className='text-2xl px-3' />
         </div>
+        
         <ul className='lg:flex hidden'>
           <li className='px-1'>
             <Link to="#">Shop</Link>
@@ -51,7 +57,10 @@ const TopNav = () => {
            <SearchOutlined className='text-2xl' />
           </Link>
           <Link to="#" className='px-4 order-4 lg:order-2'>
-            <ShoppingCartOutlined className='text-2xl' />
+            <div className='flex'>
+              <ShoppingCartOutlined className='text-2xl' />
+              <p>0</p>
+            </div>
           </Link>
           <Link to="#" className='px-4 lg:block hidden order-3'>
             <UserOutlined className='text-2xl' />

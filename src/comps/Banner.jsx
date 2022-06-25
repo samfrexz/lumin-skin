@@ -1,10 +1,11 @@
 import '../App.css'
+// import MobileNav from './MobileNav';
 
 const Banner = () => {
   return ( 
       <main className="w-full mt-20">
         <div className='w-navWidth mx-auto'>
-
+          {/* <MobileNav /> */}
           <div className='w-full h-24 flex items-center'>
             <h3>Home</h3>
           </div>
