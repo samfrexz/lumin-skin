@@ -1,12 +1,35 @@
+import { Link } from 'react-router-dom';
 import '../App.css'
-// import MobileNav from './MobileNav';
 
 const Banner = () => {
   return ( 
       <main className="w-full mt-20">
+        <div className='w-full md:hidden fixed top-20 z-50 bg-mob text-white overflow-x-auto'>
+          <div className='w-navWidth mx-auto'>
+              <ul className='flex items-center h-14'>
+                <li>
+                  <Link to="#">All</Link>
+                </li>
+                <li className='px-5'>
+                  <Link to="#">Best Sellers</Link>
+                </li>
+                <li className='px-5'>
+                  <Link to="#">Face</Link>
+                </li>
+                <li className='px-5'>
+                  <Link to="#">Hair & Body</Link>
+                </li>
+                <li className='px-5'>
+                  <Link to="#">Bundles</Link>
+                </li>
+                <li className='px-5'>
+                  <Link to="#">Accessories</Link>
+                </li>
+              </ul>
+          </div>
+        </div>
         <div className='w-navWidth mx-auto'>
-          {/* <MobileNav /> */}
-          <div className='w-full h-24 flex items-center'>
+          <div className='w-full lg:h-24 lg:flex hidden items-center'>
             <h3>Home</h3>
           </div>
 

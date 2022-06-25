@@ -59,7 +59,7 @@ const TopNav = ({ setNav, nav }) => {
           <Link to="#" className='px-4 order-4 lg:order-2'>
             <div className='flex'>
               <ShoppingCartOutlined className='text-2xl' />
-              <p>0</p>
+              <p className='text-sm'>0</p>
             </div>
           </Link>
           <Link to="#" className='px-4 lg:block hidden order-3'>
