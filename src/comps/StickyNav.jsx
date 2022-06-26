@@ -43,9 +43,31 @@ const StickyNav = () => {
                   <p className='text-small'>Sort by: </p>
                   <DownOutlined className='px-2 lg:px-0' />
                 </div>
+                <div className='block'>
+                  <div>
+                    <input type="radio" name="" id="" />
+                    <label htmlFor="">option 1</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="" id="" />
+                    <label htmlFor="">option 2</label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+            {/* <div className='bg-white'>
+              <div>
+                <div>
+                  <input type="radio" name="" id="" />
+                  <label htmlFor="">option 1</label>
+                </div>
+                <div>
+                  <input type="radio" name="" id="" />
+                  <label htmlFor="">option 2</label>
+                </div>
+              </div>
+            </div> */}
     </aside>
    );
 }

@@ -9,7 +9,8 @@ module.exports = {
         navWidth: '93%',
         bestWidth: '90%',
         cardWidth: '85%',
-        over: '1200px'
+        over: '1200px',
+        card: '500px'
       },
       colors: {
         bestBg: '#DFE2E0',

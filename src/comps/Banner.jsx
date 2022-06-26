@@ -4,9 +4,9 @@ import '../App.css'
 const Banner = () => {
   return ( 
       <main className="w-full mt-20">
-        <div className='w-full md:hidden fixed top-20 z-50 bg-mob text-white overflow-x-auto'>
-          <div className='w-navWidth mx-auto'>
-              <ul className='flex items-center h-14'>
+        <div className='w-full md:hidden fixed top-20 z-50 bg-mob text-white'>
+          <div className='w-navWidth mx-auto flex overflow-x-scroll h-14'>
+              <ul className='flex bg-red- min-w-full items-center justify-between'>
                 <li>
                   <Link to="#">All</Link>
                 </li>
@@ -28,7 +28,7 @@ const Banner = () => {
               </ul>
           </div>
         </div>
-        <div className='w-navWidth mx-auto'>
+        <div className='lg:w-navWidth w-full mx-auto'>
           <div className='w-full lg:h-24 lg:flex hidden items-center'>
             <h3>Home</h3>
           </div>

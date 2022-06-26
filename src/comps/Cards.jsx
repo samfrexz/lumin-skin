@@ -2,7 +2,7 @@ import '../App.css'
 import { StarFilled } from '@ant-design/icons';
 const Cards = ({...item}) => {
   return ( 
-    <div className="w-full bg-white rounded-xl card py-9">
+    <div className="md:w-full w-bestWidth bg-white rounded-xl card py-9">
       <div className='w-cardWidth mx-auto'>
         <div className='my-5'>
           <img src={item.image} alt="" className='h-auto w-32 mx-auto' />
